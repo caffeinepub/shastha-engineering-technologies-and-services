@@ -3,56 +3,56 @@ export const siteContent = {
     title: "SHASTHA ENGINEERING TECHNOLOGIES AND SERVICES",
     subtitle: "Engineering Excellence, Delivered",
     description:
-      "Leading provider of innovative engineering solutions and services. We transform complex challenges into streamlined, efficient systems.",
+      "Leading provider of mechanical and electrical engineering solutions for Pharma Labs, Clinical Labs, R&D Labs and Educational Laboratories across India.",
     cta: "Get Started",
   },
   intro: {
     title: "Who We Are",
     description:
-      "Shastha Engineering Technologies and Services is a premier engineering firm specializing in cutting-edge technological solutions. With decades of combined experience, our team delivers precision-engineered systems that drive business success and operational excellence.",
+      "Shastha Engineering Technologies and Services is a premier engineering firm specializing in complete lab infrastructure solutions. Founded in 2019, we deliver precision-engineered systems for the pharmaceutical and scientific community.",
   },
   services: [
     {
       id: 1,
-      title: "Industrial Automation",
+      title: "Advisory Services",
       description:
-        "Advanced automation solutions that optimize manufacturing processes, reduce costs, and improve productivity through intelligent control systems.",
-      icon: "⚙️",
-    },
-    {
-      id: 2,
-      title: "Systems Integration",
-      description:
-        "Seamless integration of complex engineering systems, ensuring all components work together efficiently for maximum performance.",
-      icon: "🔧",
-    },
-    {
-      id: 3,
-      title: "Technical Consulting",
-      description:
-        "Expert guidance on engineering challenges, from initial concept through implementation, backed by deep industry knowledge.",
+        "Expert engineering consultancy and advisory for lab setup, compliance, layout planning, and regulatory approvals.",
       icon: "💡",
     },
     {
-      id: 4,
-      title: "Maintenance & Support",
+      id: 2,
+      title: "Turnkey Projects",
       description:
-        "Comprehensive maintenance programs and 24/7 technical support to keep your systems running at peak efficiency.",
-      icon: "🛠️",
+        "End-to-end project execution covering design, procurement, installation, and commissioning of complete lab facilities.",
+      icon: "🔑",
+    },
+    {
+      id: 3,
+      title: "Pipeline Fitting Services",
+      description:
+        "Complete SS/MS/CPVC pipeline design, fabrication, installation and testing for lab gas, water and utility lines.",
+      icon: "🔧",
+    },
+    {
+      id: 4,
+      title: "Laboratory Furniture Services",
+      description:
+        "Design, fabrication and installation of custom lab benches, fume hoods, storage units and modular furniture.",
+      icon: "🪑",
     },
     {
       id: 5,
-      title: "Process Optimization",
+      title: "Clean Room Services",
       description:
-        "Data-driven analysis and optimization of industrial processes to maximize efficiency and minimize waste.",
-      icon: "📊",
+        "Design and build of ISO-certified clean rooms, HVAC, HEPA filtration, positive/negative pressure zones.",
+      icon: "🏭",
     },
     {
       id: 6,
-      title: "Custom Engineering",
+      title: "Supply of All Products & Services",
       description:
-        "Tailored engineering solutions designed specifically for your unique requirements and operational challenges.",
-      icon: "🎯",
+        "Complete supply of laboratory instruments, chemicals, consumables, safety equipment and engineering accessories.",
+      icon: "📦",
     },
   ],
   highlights: [
@@ -60,13 +60,13 @@ export const siteContent = {
       id: 1,
       title: "Proven Expertise",
       description:
-        "Decades of experience delivering successful engineering projects across diverse industries.",
+        "Over 5 years of experience delivering successful lab engineering projects across Pharma, Clinical and Educational sectors.",
     },
     {
       id: 2,
       title: "Innovation First",
       description:
-        "Leveraging the latest technologies and methodologies to provide cutting-edge solutions.",
+        "Leveraging the latest technologies and methodologies to provide cutting-edge lab solutions.",
     },
     {
       id: 3,
@@ -84,58 +84,60 @@ export const siteContent = {
   projects: [
     {
       id: 1,
-      title: "Manufacturing Plant Automation",
+      title: "Pharma Lab Turnkey Project",
       description:
-        "Complete automation overhaul for a major manufacturing facility, resulting in 40% productivity increase and significant cost savings.",
-      category: "Industrial Automation",
+        "Complete turnkey lab setup for a leading pharmaceutical company — furniture, utilities, clean room, validation.",
+      category: "Turnkey Projects",
     },
     {
       id: 2,
-      title: "Smart Factory Integration",
+      title: "Clean Room Construction",
       description:
-        "Integrated IoT sensors and control systems across multiple production lines, enabling real-time monitoring and predictive maintenance.",
-      category: "Systems Integration",
+        "ISO Class 7 & 8 clean room construction for a clinical research facility, including HVAC and BMS integration.",
+      category: "Clean Room Services",
     },
     {
       id: 3,
-      title: "Process Optimization Initiative",
+      title: "Pipeline Fitting - R&D Lab",
       description:
-        "Comprehensive analysis and optimization of chemical processing operations, reducing waste by 30% and improving safety metrics.",
-      category: "Process Optimization",
+        "Complete SS pipeline installation for gas, purified water and utility lines in a large R&D laboratory.",
+      category: "Pipeline Fitting",
     },
     {
       id: 4,
-      title: "Custom Control System",
+      title: "Lab Furniture Installation",
       description:
-        "Designed and implemented a bespoke control system for specialized manufacturing equipment, meeting unique operational requirements.",
-      category: "Custom Engineering",
+        "Custom-designed and installed modular lab benches, fume hoods and storage systems for an educational institution.",
+      category: "Laboratory Furniture",
     },
     {
       id: 5,
-      title: "Energy Management System",
+      title: "Calibration & Validation",
       description:
-        "Deployed advanced energy monitoring and management solutions, achieving 25% reduction in energy consumption.",
-      category: "Systems Integration",
+        "Comprehensive calibration and performance qualification of analytical instruments for an audit-ready lab.",
+      category: "Advisory Services",
     },
     {
       id: 6,
-      title: "Facility Modernization",
+      title: "Equipment Supply Project",
       description:
-        "Complete modernization of aging industrial facility, upgrading all control systems and implementing modern safety protocols.",
-      category: "Technical Consulting",
+        "End-to-end supply, installation, and commissioning of laboratory equipment for a new biotech startup.",
+      category: "Supply & Services",
     },
   ],
   contact: {
-    address: "123 Engineering Drive, Industrial Park, Tech City, TC 12345",
-    phone: "+1 (555) 123-4567",
-    email: "info@shasthaengineering.com",
-    hours: "Monday - Friday: 8:00 AM - 6:00 PM",
+    address:
+      "H.No. 12-6-2/226, Near Sivalayam, Kukatpally, Hyderabad, Telangana - 500072",
+    phone: "+91 98499 08449",
+    whatsapp: "919849908449",
+    email: "shastha.info@gmail.com",
+    hours: "Monday - Saturday: 9:00 AM - 6:00 PM",
   },
   about: {
     mission:
-      "Our mission is to deliver world-class engineering solutions that empower businesses to achieve operational excellence through innovation, precision, and unwavering commitment to quality.",
+      "Our mission is to deliver world-class engineering solutions that empower laboratories and research facilities to achieve operational excellence through innovation, precision, and unwavering commitment to quality.",
     vision:
-      "To be the most trusted partner in engineering services, recognized globally for our technical expertise, innovative solutions, and exceptional client relationships.",
+      "To be the most trusted partner in laboratory infrastructure and engineering services across India, recognized for technical expertise, innovative solutions, and exceptional client relationships.",
     values: [
       {
         title: "Excellence",
@@ -159,10 +161,10 @@ export const siteContent = {
       },
     ],
     stats: [
-      { label: "Years of Experience", value: "25+" },
-      { label: "Projects Completed", value: "500+" },
-      { label: "Happy Clients", value: "200+" },
-      { label: "Team Members", value: "50+" },
+      { label: "Years of Experience", value: "5+" },
+      { label: "Projects Completed", value: "100+" },
+      { label: "Happy Clients", value: "50+" },
+      { label: "Team Members", value: "15+" },
     ],
   },
 };

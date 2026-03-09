@@ -1,9 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 import { siteContent } from "../content/siteContent";
 
 export default function Contact() {
+  const { contact } = siteContent;
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -47,7 +49,7 @@ export default function Contact() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-muted-foreground">
-                      {siteContent.contact.address}
+                      {contact.address}
                     </p>
                   </CardContent>
                 </Card>
@@ -60,9 +62,13 @@ export default function Contact() {
                     <CardTitle className="text-lg">Phone</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      {siteContent.contact.phone}
-                    </p>
+                    <a
+                      href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      data-ocid="contact.phone_link"
+                    >
+                      {contact.phone}
+                    </a>
                   </CardContent>
                 </Card>
 
@@ -74,25 +80,55 @@ export default function Contact() {
                     <CardTitle className="text-lg">Email</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      {siteContent.contact.email}
-                    </p>
+                    <a
+                      href={`mailto:${contact.email}`}
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors break-all"
+                      data-ocid="contact.email_link"
+                    >
+                      {contact.email}
+                    </a>
                   </CardContent>
                 </Card>
 
                 <Card>
                   <CardHeader>
-                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                      <Clock className="h-5 w-5 text-primary" />
+                    <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
+                      <MessageCircle className="h-5 w-5 text-green-600" />
                     </div>
-                    <CardTitle className="text-lg">Business Hours</CardTitle>
+                    <CardTitle className="text-lg">WhatsApp</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      {siteContent.contact.hours}
-                    </p>
+                    <a
+                      href={`https://wa.me/${contact.whatsapp}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-md bg-green-500 px-4 py-2 text-sm font-medium text-white hover:bg-green-600 transition-colors"
+                      data-ocid="contact.whatsapp_button"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Chat on WhatsApp
+                    </a>
                   </CardContent>
                 </Card>
+              </div>
+
+              {/* Map placeholder */}
+              <div className="rounded-xl border border-border overflow-hidden h-48 bg-muted/40 flex items-center justify-center">
+                <div className="text-center space-y-2">
+                  <MapPin className="h-8 w-8 text-primary mx-auto" />
+                  <p className="text-sm text-muted-foreground font-medium">
+                    Kukatpally, Hyderabad, Telangana
+                  </p>
+                  <a
+                    href="https://maps.google.com/?q=Kukatpally,Hyderabad,Telangana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-primary hover:underline"
+                    data-ocid="contact.map_link"
+                  >
+                    Open in Google Maps
+                  </a>
+                </div>
               </div>
             </div>
 

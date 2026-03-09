@@ -31,30 +31,52 @@ const navItems: NavItem[] = [
     name: "INDUSTRIES",
     path: "/industries",
     dropdown: [
-      { label: "Pharma Labs", path: "/industries" },
-      { label: "Clinical Labs", path: "/industries" },
-      { label: "R&D Labs", path: "/industries" },
-      { label: "Educational Labs", path: "/industries" },
+      { label: "Pharma Labs", path: "/industries/pharma-labs" },
+      { label: "Clinical Labs", path: "/industries/clinical-labs" },
+      { label: "R&D Labs", path: "/industries/r-and-d-labs" },
+      { label: "Educational Labs", path: "/industries/educational-labs" },
     ],
   },
   {
     name: "PRODUCTS",
     path: "/products",
     dropdown: [
-      { label: "Mechanical Equipment", path: "/products" },
-      { label: "Electrical Equipment", path: "/products" },
-      { label: "Lab Furniture", path: "/products" },
-      { label: "Safety Equipment", path: "/products" },
+      { label: "Turnkey Projects", path: "/products/turnkey-projects" },
+      { label: "Laboratory Furniture", path: "/products/laboratory-furniture" },
+      { label: "Clean Room Projects", path: "/products/cleanroom-projects" },
+      {
+        label: "Safety & Storage Cabinets",
+        path: "/products/safety-storage-cabinets",
+      },
+      {
+        label: "Other Lab Equipment & Accessories",
+        path: "/products/lab-equipment-accessories",
+      },
+      { label: "Supply & Services", path: "/products/supply-and-services" },
     ],
   },
   {
     name: "SERVICES",
     path: "/services",
     dropdown: [
-      { label: "Installation & Commissioning", path: "/services" },
-      { label: "Annual Maintenance", path: "/services" },
-      { label: "Calibration Services", path: "/services" },
-      { label: "Turnkey Projects", path: "/services" },
+      { label: "Advisory Services", path: "/services/advisory-services" },
+      {
+        label: "Turnkey Projects Services",
+        path: "/services/turnkey-projects-services",
+      },
+      {
+        label: "Pipeline Fitting Services",
+        path: "/services/pipeline-fitting",
+      },
+      {
+        label: "Laboratory Furniture Services",
+        path: "/services/laboratory-furniture",
+      },
+      { label: "Clean Room Services", path: "/services/clean-room" },
+      {
+        label: "Supply of All Products & Services",
+        path: "/services/supply-products",
+      },
     ],
   },
   { name: "CLIENTS", path: "/clients" },
@@ -120,7 +142,7 @@ export default function SiteHeader() {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent
                     align="start"
-                    className="min-w-[200px]"
+                    className="min-w-[220px]"
                     data-ocid={`${ocid}.dropdown_menu`}
                   >
                     {item.dropdown.map((sub) => (

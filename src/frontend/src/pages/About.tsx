@@ -19,6 +19,84 @@ export default function About() {
         </div>
       </section>
 
+      {/* Company Story */}
+      <section className="border-b border-border bg-background py-16 md:py-24">
+        <div className="container">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold tracking-tight">Our Story</h2>
+              <p className="text-lg text-muted-foreground">
+                Shastha Engineering Technologies and Services was founded in
+                <strong> 2019</strong> with a clear vision: to provide
+                comprehensive, high-quality engineering solutions for
+                laboratories and research facilities across India.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                We specialize in complete mechanical and electrical engineering
+                services for <strong>Pharma Labs</strong>,{" "}
+                <strong>Clinical Labs</strong>, <strong>R&D Labs</strong>, and{" "}
+                <strong>Educational Labs</strong>. From lab furniture to clean
+                rooms, pipeline fitting to turnkey projects — we handle it all.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Headquartered in Kukatpally, Hyderabad, we have successfully
+                completed over 100 projects and continue to grow, driven by our
+                commitment to client satisfaction and engineering excellence.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border shadow-lg">
+              <img
+                src="/assets/generated/about-team.dim_800x500.jpg"
+                alt="Shastha Engineering Team"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CEO Section */}
+      <section className="border-b border-border bg-muted/30 py-16 md:py-24">
+        <div className="container">
+          <div className="mx-auto max-w-4xl">
+            <div className="grid gap-10 lg:grid-cols-3 items-center">
+              <div className="flex justify-center">
+                <div className="overflow-hidden rounded-2xl border border-border shadow-xl w-60 h-72">
+                  <img
+                    src="/assets/generated/ceo-portrait.dim_400x500.jpg"
+                    alt="V. Hemanth - CEO"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-2 space-y-4">
+                <div>
+                  <h2 className="text-3xl font-bold tracking-tight">
+                    V. Hemanth
+                  </h2>
+                  <p className="text-lg font-semibold text-primary mt-1">
+                    Chief Executive Officer
+                  </p>
+                </div>
+                <p className="text-lg text-muted-foreground">
+                  With a strong foundation in mechanical and electrical
+                  engineering, V. Hemanth founded Shastha Engineering
+                  Technologies and Services in 2019. His vision of delivering
+                  world-class lab infrastructure solutions to the pharmaceutical
+                  and scientific community has shaped the company's growth and
+                  culture.
+                </p>
+                <p className="text-lg text-muted-foreground">
+                  Under his leadership, Shastha has become a trusted name in
+                  laboratory engineering, known for quality execution,
+                  professional service, and customer-first values.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="border-b border-border bg-background py-16 md:py-24">
         <div className="container">
@@ -79,48 +157,6 @@ export default function About() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Company Overview */}
-      <section className="bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 py-16 md:py-24">
-        <div className="container">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="mb-8 text-3xl font-bold tracking-tight sm:text-4xl">
-              Company Overview
-            </h2>
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p>
-                Shastha Engineering Technologies and Services has been at the
-                forefront of engineering innovation for over two decades. Our
-                journey began with a simple vision: to provide exceptional
-                engineering solutions that make a real difference in our
-                clients' operations.
-              </p>
-              <p>
-                Today, we are proud to serve a diverse portfolio of clients
-                across multiple industries, from manufacturing and processing to
-                energy and infrastructure. Our team of highly skilled engineers
-                and technicians brings together decades of combined experience,
-                cutting-edge technical knowledge, and a passion for solving
-                complex challenges.
-              </p>
-              <p>
-                What sets us apart is our commitment to understanding each
-                client's unique needs and delivering tailored solutions that not
-                only meet but exceed expectations. We invest in the latest
-                technologies and continuously update our skills to ensure we
-                remain at the cutting edge of engineering practice.
-              </p>
-              <p>
-                As we look to the future, we remain committed to our founding
-                principles: excellence in execution, innovation in approach, and
-                unwavering dedication to client success. We invite you to join
-                us on this journey and experience the Shastha Engineering
-                difference.
-              </p>
-            </div>
           </div>
         </div>
       </section>
