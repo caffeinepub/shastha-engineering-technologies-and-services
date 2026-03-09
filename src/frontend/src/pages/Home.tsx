@@ -104,31 +104,78 @@ const latestServices = [
 ];
 
 const clientsData = [
-  { name: "Sai Life Science", initials: "SL", sector: "Pharmaceutical" },
-  { name: "Pi Health Science", initials: "PH", sector: "Health Science" },
-  { name: "Naurties", initials: "NA", sector: "Pharmaceutical" },
-  { name: "Sandoz", initials: "SA", sector: "Pharmaceutical" },
-  { name: "Genisys", initials: "GE", sector: "Biotechnology" },
-  { name: "Ashland", initials: "AS", sector: "Specialty Chemicals" },
-  { name: "Vikasitha", initials: "VI", sector: "Pharmaceutical" },
-  { name: "Vasudha Pharma", initials: "VP", sector: "Pharmaceutical" },
-  { name: "Saphal Life Science", initials: "SP", sector: "Life Science" },
-  { name: "Aurobindo Pharma", initials: "AU", sector: "Pharmaceutical" },
-  { name: "Dr. Reddy's", initials: "DR", sector: "Pharmaceutical" },
-];
-
-const clientGradients = [
-  "from-blue-500 to-blue-700",
-  "from-green-500 to-emerald-700",
-  "from-purple-500 to-violet-700",
-  "from-orange-500 to-amber-700",
-  "from-teal-500 to-cyan-700",
-  "from-rose-500 to-pink-700",
-  "from-indigo-500 to-indigo-700",
-  "from-amber-500 to-yellow-700",
-  "from-cyan-500 to-sky-700",
-  "from-emerald-500 to-green-700",
-  "from-fuchsia-500 to-pink-700",
+  {
+    name: "Aditya Birla",
+    sector: "Conglomerate",
+    logo: "/assets/uploads/Aditya-Birla-Logo-Vector.svg--1.png",
+    darkBg: false,
+  },
+  {
+    name: "Ashland",
+    sector: "Specialty Chemicals",
+    logo: "/assets/uploads/250px-Ashland_4color_process-2.png",
+    darkBg: false,
+  },
+  {
+    name: "Enanti",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/1630634268079-3.jpeg",
+    darkBg: false,
+  },
+  {
+    name: "Sandoz",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Sandoz-Logo-Sandoz-Blue-RGB-4.webp",
+    darkBg: true,
+  },
+  {
+    name: "Genisys Group",
+    sector: "Biotechnology",
+    logo: "/assets/uploads/images-5.png",
+    darkBg: false,
+  },
+  {
+    name: "Sai Life Sciences",
+    sector: "Life Sciences",
+    logo: "/assets/uploads/sai-6.jpeg",
+    darkBg: false,
+  },
+  {
+    name: "Virupaksha",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/V-LOGO-PNG-1536x543-1-7.png",
+    darkBg: false,
+  },
+  {
+    name: "Dr. Reddy's",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Dr._Reddy-s_Laboratories_logo.svg-8.png",
+    darkBg: false,
+  },
+  {
+    name: "Novartis",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Novartis-Logo-9.png",
+    darkBg: true,
+  },
+  {
+    name: "Aurobindo Pharma",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Aurobindo_Pharma_logo.svg-10.png",
+    darkBg: false,
+  },
+  {
+    name: "Coromandel",
+    sector: "Agrochemicals",
+    logo: "/assets/uploads/COROMANDEL.NS_BIG.D-fb684606-11.png",
+    darkBg: false,
+  },
+  {
+    name: "PI Health Sciences",
+    sector: "Health Science",
+    logo: "/assets/uploads/PI-12.webp",
+    darkBg: false,
+  },
 ];
 
 const industriesData = [
@@ -172,7 +219,7 @@ const industriesData = [
 
 const statsData = [
   { icon: CalendarDays, value: "Since 2019", label: "Established" },
-  { icon: Users, value: "11+", label: "Happy Clients" },
+  { icon: Users, value: "12+", label: "Happy Clients" },
   { icon: TrendingUp, value: "6", label: "Service Areas" },
   { icon: MapPin, value: "Pan India", label: "Reach" },
 ];
@@ -565,7 +612,7 @@ export default function Home() {
               className="flex items-center gap-3 rounded-full border border-primary/30 bg-primary/5 px-6 py-3"
               variants={fadeUp}
             >
-              <span className="text-3xl font-extrabold text-primary">11+</span>
+              <span className="text-3xl font-extrabold text-primary">12+</span>
               <Separator orientation="vertical" className="h-8 bg-primary/20" />
               <div className="text-left">
                 <div className="text-sm font-semibold text-foreground">
@@ -597,12 +644,16 @@ export default function Home() {
                 key={client.name}
                 data-ocid={`home.clients.item.${index + 1}`}
                 variants={fadeUp}
-                className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-5 text-center shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30"
+                className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-4 text-center shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/30"
               >
                 <div
-                  className={`flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br ${clientGradients[index % clientGradients.length]} text-lg font-bold text-white shadow-md`}
+                  className={`flex h-16 w-full items-center justify-center rounded-lg px-3 ${client.darkBg ? "bg-gray-900" : "bg-white"} border border-border/30`}
                 >
-                  {client.initials}
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    className="h-12 w-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="text-sm font-semibold text-foreground leading-tight">

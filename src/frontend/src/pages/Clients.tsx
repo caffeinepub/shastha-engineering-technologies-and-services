@@ -1,33 +1,80 @@
 const clients = [
-  { name: "Sai Life Science", sector: "Pharmaceutical", initials: "SL" },
-  { name: "Pi Health Science", sector: "Health Science", initials: "PH" },
-  { name: "Naurties", sector: "Pharmaceutical", initials: "NA" },
-  { name: "Sandoz", sector: "Pharmaceutical", initials: "SA" },
-  { name: "Genisys", sector: "Biotechnology", initials: "GE" },
-  { name: "Ashland", sector: "Specialty Chemicals", initials: "AS" },
-  { name: "Vikasitha", sector: "Pharmaceutical", initials: "VI" },
-  { name: "Vasudha Pharma", sector: "Pharmaceutical", initials: "VP" },
-  { name: "Saphal Life Science", sector: "Life Science", initials: "SP" },
-  { name: "Aurobindo Pharma", sector: "Pharmaceutical", initials: "AU" },
-  { name: "Dr. Reddy's", sector: "Pharmaceutical", initials: "DR" },
-];
-
-const gradients = [
-  "from-blue-500 to-blue-700",
-  "from-green-500 to-emerald-700",
-  "from-purple-500 to-violet-700",
-  "from-orange-500 to-amber-700",
-  "from-teal-500 to-cyan-700",
-  "from-rose-500 to-pink-700",
-  "from-indigo-500 to-indigo-700",
-  "from-amber-500 to-yellow-700",
-  "from-cyan-500 to-sky-700",
-  "from-emerald-500 to-green-700",
-  "from-fuchsia-500 to-pink-700",
+  {
+    name: "Aditya Birla",
+    sector: "Conglomerate",
+    logo: "/assets/uploads/Aditya-Birla-Logo-Vector.svg--1.png",
+    darkBg: false,
+  },
+  {
+    name: "Ashland",
+    sector: "Specialty Chemicals",
+    logo: "/assets/uploads/250px-Ashland_4color_process-2.png",
+    darkBg: false,
+  },
+  {
+    name: "Enanti",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/1630634268079-3.jpeg",
+    darkBg: false,
+  },
+  {
+    name: "Sandoz",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Sandoz-Logo-Sandoz-Blue-RGB-4.webp",
+    darkBg: true,
+  },
+  {
+    name: "Genisys Group",
+    sector: "Biotechnology",
+    logo: "/assets/uploads/images-5.png",
+    darkBg: false,
+  },
+  {
+    name: "Sai Life Sciences",
+    sector: "Life Sciences",
+    logo: "/assets/uploads/sai-6.jpeg",
+    darkBg: false,
+  },
+  {
+    name: "Virupaksha",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/V-LOGO-PNG-1536x543-1-7.png",
+    darkBg: false,
+  },
+  {
+    name: "Dr. Reddy's",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Dr._Reddy-s_Laboratories_logo.svg-8.png",
+    darkBg: false,
+  },
+  {
+    name: "Novartis",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Novartis-Logo-9.png",
+    darkBg: true,
+  },
+  {
+    name: "Aurobindo Pharma",
+    sector: "Pharmaceutical",
+    logo: "/assets/uploads/Aurobindo_Pharma_logo.svg-10.png",
+    darkBg: false,
+  },
+  {
+    name: "Coromandel",
+    sector: "Agrochemicals",
+    logo: "/assets/uploads/COROMANDEL.NS_BIG.D-fb684606-11.png",
+    darkBg: false,
+  },
+  {
+    name: "PI Health Sciences",
+    sector: "Health Science",
+    logo: "/assets/uploads/PI-12.webp",
+    darkBg: false,
+  },
 ];
 
 const stats = [
-  { label: "Clients", value: "11+" },
+  { label: "Clients", value: "12+" },
   { label: "Since", value: "2019" },
   { label: "Reach", value: "Pan India" },
 ];
@@ -78,12 +125,18 @@ export default function Clients() {
               <div
                 key={client.name}
                 data-ocid={`clients.item.${index + 1}`}
-                className="flex flex-col items-center gap-4 rounded-xl border border-border bg-card p-8 text-center shadow-sm transition-all duration-200 hover:shadow-lg hover:scale-105 hover:border-primary/30"
+                className="flex flex-col items-center gap-4 rounded-xl border border-border bg-card p-6 text-center shadow-sm transition-all duration-200 hover:shadow-lg hover:scale-105 hover:border-primary/30"
               >
                 <div
-                  className={`flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br ${gradients[index % gradients.length]} text-2xl font-bold text-white shadow-md`}
+                  className={`flex h-28 w-full items-center justify-center rounded-lg px-4 ${
+                    client.darkBg ? "bg-gray-900" : "bg-white"
+                  } border border-border/40`}
                 >
-                  {client.initials}
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    className="h-20 w-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground text-base">
