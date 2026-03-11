@@ -23,7 +23,7 @@ const industries = [
       "GMP-compliant lab design, cleanroom installation, HVAC systems, water purification, and complete pharma lab infrastructure.",
     icon: FlaskConical,
     path: "/industries/pharma-labs",
-    image: "/assets/generated/pharma-labs.dim_800x500.jpg",
+    image: "/assets/generated/pharma-labs-new.dim_800x500.jpg",
     badge: "Pharma Labs",
     ocid: "industries.pharma.card",
     linkOcid: "industries.pharma.link",

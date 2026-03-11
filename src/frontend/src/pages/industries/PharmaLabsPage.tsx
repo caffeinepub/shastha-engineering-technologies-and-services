@@ -14,7 +14,7 @@ export default function PharmaLabsPage() {
         "Fume hoods and biosafety cabinets",
         "Regulatory compliance support",
       ]}
-      image="/assets/generated/pharma-labs.dim_800x500.jpg"
+      image="/assets/generated/pharma-labs-new.dim_800x500.jpg"
       imageAlt="Pharmaceutical Laboratory"
       category="Industries"
     />

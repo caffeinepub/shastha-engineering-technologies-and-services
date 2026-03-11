@@ -105,16 +105,19 @@ export default function SiteHeader() {
       <div className="container flex h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img
-            src="/assets/generated/shastha-logo.dim_512x512.png"
-            alt="Shastha Engineering Logo"
-            className="h-12 w-12 object-contain"
+            src="/assets/uploads/Preview-1.png"
+            alt="Shastha Engineering Technologies and Services Logo"
+            className="h-14 w-14 object-contain"
           />
           <div className="flex flex-col">
-            <span className="text-lg font-bold leading-tight tracking-tight text-foreground">
+            <span className="text-sm font-bold leading-tight tracking-tight text-foreground">
               SHASTHA ENGINEERING
             </span>
-            <span className="text-xs font-medium text-muted-foreground">
+            <span className="text-[10px] font-medium text-muted-foreground leading-tight">
               Technologies &amp; Services
+            </span>
+            <span className="text-[10px] font-semibold text-primary leading-tight italic">
+              Engineering Your Vision
             </span>
           </div>
         </Link>

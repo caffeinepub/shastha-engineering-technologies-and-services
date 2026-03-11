@@ -24,7 +24,6 @@ import {
   Microscope,
   Package,
   PipetteIcon,
-  Star,
   TrendingUp,
   Users,
   Wind,
@@ -264,9 +263,14 @@ export default function Home() {
                 <Badge
                   variant="outline"
                   className="mb-4 inline-flex items-center gap-1.5 border-primary/30 text-primary"
+                  data-ocid="home.hero.tab"
                 >
-                  <Star className="h-3 w-3 fill-current" />
-                  Premier Lab Engineering Partner
+                  <img
+                    src="/assets/uploads/Preview-1.png"
+                    alt="Shastha Logo"
+                    className="h-4 w-4 object-contain"
+                  />
+                  Engineering Your Vision
                 </Badge>
               </motion.div>
               <motion.div className="space-y-4" variants={fadeUp}>
@@ -764,7 +768,7 @@ export default function Home() {
               className="mt-6 text-lg text-primary-foreground/80"
               variants={fadeUp}
             >
-              Let's discuss how we can help transform your engineering
+              Let&apos;s discuss how we can help transform your engineering
               challenges into opportunities for success.
             </motion.p>
             <motion.div
